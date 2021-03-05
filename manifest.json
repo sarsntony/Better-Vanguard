@@ -1,0 +1,17 @@
+{
+  "name": "Better Vanguard",
+  "version": "1.0",
+  "description": "Improvements on Vanguard UI",
+  "manifest_version": 2,
+  "content_scripts":[
+    {
+      "matches":["https://personal.vanguard.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["contextMenus"]
+}
