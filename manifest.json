@@ -5,14 +5,11 @@
   "manifest_version": 2,
   "content_scripts":[
     {
-      "matches":["https://personal.vanguard.com/*"],
-      "css": ["content.css"],
-      "js": ["content.js"]
+      "matches":["https://personal.vanguard.com/us/XHTML/com/vanguard/costbasisnew/xhtml/CostBasisSummary.xhtml"],
+      "css": ["percentage.css"],
+      "js": ["percentage.js"],
+      "run_at": "document_idle"
     }
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "permissions": ["contextMenus"]
 }
